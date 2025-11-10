@@ -1,0 +1,18 @@
+data_ingestion_params:
+  shuffle: True
+  with_info: True
+  dataset_name: "malaria"
+  as_supervised: True
+  split: ["train"]
+
+split_datasets_params:
+  train_size: 0.6
+  test_size: 0.2
+  validation_size: 0.2
+
+preprocessing:
+  shuffle_size: 8
+  batch_size: 32
+  img_shape: 244
+
+model_building:

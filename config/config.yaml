@@ -1,0 +1,22 @@
+# all the configuration for our project will be stored here
+
+artifacts_dir: "artifacts"
+
+data_ingestion:
+  root_dir: "artifacts/data_ingestion"
+  dataset_path: "artifacts/data_ingestion/raw"
+  dataset_info_path: "artifacts/data_ingestion/malaria_dataset_info.txt"
+
+split_dataset:
+  root_dir: "artifacts/split_data"
+  train_path: "artifacts/split_data/train"
+  test_path: "artifacts/split_data/test"
+  validation_path: "artifacts/split_data/validate"
+  dataset_path: "artifacts/data_ingestion/raw"
+
+preprocessing:
+
+model_building:
+  train_path: "artifacts/split_data/train"
+  validation_path: "artifacts/split_data/validate"
+  model_path: "artifacts/model"
